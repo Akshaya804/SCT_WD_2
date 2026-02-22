@@ -1,2 +1,9 @@
 # SCT_WD_2
-A Scientific Calculator Web Application built using HTML, CSS, and JavaScript as part of SkillCraft Technology Web Development Internship – Task 2.
+# Scientific Calculator Web Application
+
+This project was developed as part of my internship at SkillCraft Technology.
+
+## Features
+- Scientific functions
+- Keyboard support
+- Error handling
