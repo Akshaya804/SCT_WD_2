@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111827;
+}
+
+.calculator {
+  width: 360px;
+  background: #1f2937;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.display {
+  background: #0b1220;
+  color: white;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: right;
+  margin-bottom: 14px;
+  min-height: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.previous {
+  font-size: 14px;
+  opacity: 0.65;
+  min-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.current {
+  font-size: 26px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #374151;
+  color: white;
+  transition: transform 0.05s ease, filter 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.operator {
+  background: #2563eb;
+}
+
+.special {
+  background: #6b7280;
+}
+
+.equal {
+  background: #10b981;
+  grid-row: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.sci {
+  background: #4b5563;
+  font-size: 15px;
+  padding: 12px;
+}
+
+/* ✅ Keyboard highlight */
+.btn.key-active {
+  filter: brightness(1.35);
+  outline: 2px solid rgba(255,255,255,0.22);
+}
