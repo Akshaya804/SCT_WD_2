@@ -3,7 +3,7 @@
 
 This project was developed as part of my internship at SkillCraft Technology.
 
-## Features
+## Features 
 - Scientific functions
 - Keyboard support
 - Error handling
